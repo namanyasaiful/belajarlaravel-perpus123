@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\AnggotaController;
+use app\Http\Controllers\BukuController;
+use app\Http\Controllers\PerpustakaanController;
+use app\Http\Controllers\PetugasController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +20,16 @@ Route::get('/', function () {
     return view('welcome');
 })->name('dashboard');
 
-Route::get('/anggota', [PerpustakaanController::class, 'anggota'])->name('get_anggota');
+Route::get('/anggota', [perpustakaan::class, 'anggota'])->name('get_anggota');
 
-Route::get('/buku', [PerpustakaanController::class, 'buku'])->name('get_buku');
+Route::get('/buku', [perpustakaan::class, 'buku'])->name('get_buku');
 
-Route::get('/petugas', [PerpustakaanController::class, 'petugas'])->name('get_petugas');
+Route::get('/petugas', [perpustakaan::class, 'petugas'])->name('get_petugas');
+Route::get('/tabel', function () {
+    return view('tabel');
+});
+Route::resource('/anggota', AnggotaController::class);
+
+Route::resource('/buku', BukuContoller::class);
+
+Route::resource('/petugas', PetugasController::class);
