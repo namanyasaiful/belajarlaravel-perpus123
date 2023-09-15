@@ -40,15 +40,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="kode_anggota">Kode Anggota</label>
-                                    <input type="text" class="form-control" name="kode" id="kode_anggota" placeholder="Masukan kode">
+                                    <input type="text" class="form-control" name="kode_anggota" id="kode_anggota" placeholder="Masukan kode">
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan nama">
+                                    <input type="text" class="form-control" name="nama_anggota" id="nama" placeholder="Masukan nama">
                                 </div>
                                 <div class="form-group">
                                     <label for="jk">Jenis Kelamin</label>
-                                    <select class="custom-select" name="jk">
+                                    <select class="custom-select" name="jk_anggota">
                                         <option selected disabled></option>
                                         <option>LAKI-LAKI</option>
                                         <option>PERUMPUAN</option>
@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Jurusan</label>
-                                    <select class="custom-select" name="jurusan">
+                                    <select class="custom-select" name="jurusan_anggota">
                                         <option selected disabled>Pilih Jurusan</option>
                                         <option>RPL</option>
                                         <option>DPIB</option>
@@ -73,12 +73,12 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                         </div>
-                                        <input type="number" class="form-control" name="tlp" data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
+                                        <input type="number" class="form-control" name="no_telp_anggota" data-inputmask='"mask": "(999) 999-9999"' data-mask placeholder="Masukan angka">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Alamat</label>
-                                    <textarea class="form-control" rows="3" name="alamat" placeholder="Masukan alamat"></textarea>
+                                    <textarea class="form-control" rows="3" name="alamat_anggota" placeholder="Masukan alamat"></textarea>
                                 </div>
                             </div>
                             <div class="card-footer">

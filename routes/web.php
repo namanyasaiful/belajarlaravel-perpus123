@@ -1,9 +1,9 @@
 <?php
 
+
 use App\Http\Controllers\AnggotaController;
-use app\Http\Controllers\BukuController;
-use app\Http\Controllers\PerpustakaanController;
-use app\Http\Controllers\PetugasController;
+use App\Http\Controllers\PetugasController;
+use App\Http\Controllers\BukuController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +30,6 @@ Route::get('/tabel', function () {
 });
 Route::resource('/anggota', AnggotaController::class);
 
-Route::resource('/buku', BukuContoller::class);
+Route::resource('/buku', BukuController::class);
 
 Route::resource('/petugas', PetugasController::class);
