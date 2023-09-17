@@ -54,7 +54,7 @@
 
                                 <div class="form-group">
                                     <label for="alamat_petugas" name="alamat" id="alamat_petugas">alamat petugas</label>
-                                    <input class="form-control" type="text" name="alamat_petugas" id="alamat_petugas" placeholder="alamat">
+                                    <input class="form-control" type="text" name="alamat" id="alamat_petugas" placeholder="alamat">
                                 </div>
 
                             </div>

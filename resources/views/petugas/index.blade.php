@@ -61,7 +61,7 @@
                                     <td>{{ $value->nama_petugas }}</td>
                                     <td>{{ $value->jabatan_petugas }}</td>
                                     <td>{{ $value->tlp_petugas }}</td>
-                                    <td>{{ $value->alamat_petugas }}</td>
+                                    <td>{{ $value->alamat }}</td>
 
                                     <td>
                                         <a href="" class="btn-sm btn-info">Show</a>

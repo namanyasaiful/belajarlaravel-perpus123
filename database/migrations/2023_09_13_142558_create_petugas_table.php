@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_petugas');
             $table->string('jabatan_petugas');
-            $table->char('no_telp_petugas');
+            $table->char('tlp_petugas');
             $table->string('alamat');
             $table->timestamps();
              

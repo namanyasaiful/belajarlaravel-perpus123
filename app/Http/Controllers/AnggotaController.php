@@ -31,22 +31,22 @@ class AnggotaController extends Controller
     {
         $request->validate([
             'id' => 'required',
-            'kode_anggota' => 'required',
-            'nama_anggota' => 'required',
-            'jk_anggota' => 'required',
-            'jurusan_anggota' => 'required',
-            'no_telp_anggota' => 'required',
-            'alamat_anggota' => 'required',
+            'kode' => 'required',
+            'nama' => 'required',
+            'jk' => 'required',
+            'jurusan' => 'required',
+            'tlp' => 'required',
+            'alamat' => 'required',
         ]);
 
         $query = DB::table('anggota')->insert([
             'id' => $request['id'],
-            'kode_anggota' => $request['kode_anggota'],
-            'nama_anggota' => $request['nama_anggota'],
-            'jk_anggota' => $request['jk_anggota'],
-            'jurusan_anggota' => $request['jurusan_anggota'],
-            'no_telp_anggota' => $request['no_telp_anggota'],
-            'alamat_anggota' => $request['alamat_anggota'],
+            'kode' => $request['kode'],
+            'nama' => $request['nama'],
+            'jk' => $request['jk'],
+            'jurusan' => $request['jurusan'],
+            'tlp' => $request['tlp'],
+            'alamat' => $request['alamat'],
         ]);
 
         return redirect('/anggota');

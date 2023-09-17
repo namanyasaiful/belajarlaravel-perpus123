@@ -33,7 +33,7 @@ class PetugasController extends Controller
             'id' => 'required',
             'nama_petugas' => 'required',
             'jabatan_petugas' => 'required',
-            'no_telp_petugas' => 'required',
+            'tlp_petugas' => 'required',
             'alamat' => 'required',
 
         ]);
@@ -42,7 +42,7 @@ class PetugasController extends Controller
             'id' => $request['id'],
             'nama_petugas' => $request['nama_petugas'],
             'jabatan_petugas' => $request['jabatan_petugas'],
-            'no_telp_petugas' => $request['no_telp_petugas'],
+            'tlp_petugas' => $request['tlp_petugas'],
             'alamat' => $request['alamat'],
 
         ]);
