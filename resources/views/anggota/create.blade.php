@@ -82,9 +82,11 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                             <!-- /.content -->
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         </form>
                     </div>
                     @endsection

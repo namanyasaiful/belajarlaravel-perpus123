@@ -8,11 +8,6 @@
         <li class="nav-item d-none d-sm-inline-block">
           <a href="/" class="nav-link">Home</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a href="/tabel" class="nav-link">Tabel peminjaman</a>
-        </li>
-      </ul>
-
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
         <!-- Navbar Search -->

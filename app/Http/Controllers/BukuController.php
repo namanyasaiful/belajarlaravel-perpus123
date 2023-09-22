@@ -57,7 +57,8 @@ class BukuController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $buku = DB::table('buku')->where('id', $id)->get();
+        return view('buku.show', compact('buku'));
     }
 
     /**

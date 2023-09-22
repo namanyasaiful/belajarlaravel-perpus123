@@ -42,9 +42,7 @@
                         <table class="table table-head-fixed text-nowrap">
                             <thead>
                                 <tr>
-                                    <th>No</th>
-                                    <th>id</th>
-                                    <th>kode</th>
+                                    <th>no</th>
                                     <th>nama</th>
                                     <th>jenis kelamin</th>
                                     <th>jurusan</th>
@@ -57,20 +55,21 @@
                                 @forelse ($anggota as $key => $value)
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
-                                    <td>{{ $value->id }}</td>
-                                    <td>{{ $value->kode }}</td>
                                     <td>{{ $value->nama }}</td>
                                     <td>{{ $value->jk }}</td>
                                     <td>{{ $value->jurusan }}</td>
                                     <td>{{ $value->tlp }}</td>
                                     <td>{{ $value->alamat }}</td>
                                     <td>
-                                        <a href="" class="btn-sm btn-info">Show</a>
-                                        <a href="" class="btn-sm btn-warning">Edit</a>
-                                        <a href="" class="btn-sm btn-danger">Delete</a>
+                                        <form action="{{ route('anggota.destroy', $value->id) }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                            <a href="{{ route('anggota.show', $value->id) }}" class="btn-sm btn-info">Show</a>
+                                            <a href="{{ route('anggota.edit', $value->id) }}" class="btn-sm btn-warning">Edit</a>
+                                            <button type="submit" class="btn-sm btn-danger">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
-
                                 @empty
                                 <tr>
                                     <td>Data Masih Kosong</td>
@@ -78,6 +77,9 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        <div class="card-footer">
+                            <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                        </div>
                     </div>
                 </div>
             </div>

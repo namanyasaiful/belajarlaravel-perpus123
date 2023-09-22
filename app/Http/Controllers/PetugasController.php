@@ -55,7 +55,8 @@ class PetugasController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $petugas = DB::table('petugas')->where('id', $id)->get();
+        return view('petugas.show', compact('petugas'));
     }
 
     /**
@@ -63,7 +64,8 @@ class PetugasController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $petugas = DB::table('petugas')->where('id', $id)->get();
+        return view('petugas.edit', compact('petugas'));
     }
 
     /**

@@ -64,8 +64,8 @@
                                     <td>{{ $value->alamat }}</td>
 
                                     <td>
-                                        <a href="" class="btn-sm btn-info">Show</a>
-                                        <a href="" class="btn-sm btn-warning">Edit</a>
+                                        <a href="{{ route('petugas.show', $value->id )}}" class="btn-sm btn-info">Show</a>
+                                        <a href="{{ route('petugas.edit', $value->id )}}" class="btn-sm btn-warning">Edit</a>
                                         <a href="" class="btn-sm btn-danger">Delete</a>
                                     </td>
                                 </tr>
