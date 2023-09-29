@@ -65,7 +65,7 @@
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
-                  <label for="text">Alamat</label>
+                  <label for="alamat">Alamat</label>
                   <input type="text" name="alamat" id="alamat" class="form-control @error('alamat') is-invalid @enderror" placeholder="Enter Umur" value="{{ $petugas[0]->alamat }}">
                 </div>
                 @error('umur')
