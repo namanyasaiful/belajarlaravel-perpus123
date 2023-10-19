@@ -40,49 +40,49 @@
                   <label for="id">id</label>
                   <input type="text" name="id" id="id" class="form-control @error('id') is-invalid @enderror " placeholder="Enter Nama" value="{{ $anggota[0]->id }}">
                 </div>
-                @error('nama')
+                @error('id')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="kode">Kode</label>
                   <input type="text" name="kode" id="kode" class="form-control @error('kode') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->kode }}">
                 </div>
-                @error('umur')
+                @error('kode')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="nama">Nama</label>
                   <input type="text" name="nama" id="nama" class="form-control @error('nama') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->nama }}">
                 </div>
-                @error('umur')
+                @error('nama')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="jk">jenis Kelamin</label>
                   <input type="text" name="jk" id="jk" class="form-control @error('jk') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->jk }}">
                 </div>
-                @error('umur')
+                @error('jk')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="jurusan">Jurusan</label>
                   <input type="text" name="jurusan" id="jurusan" class="form-control @error('jurusan') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->jurusan }}">
                 </div>
-                @error('umur')
+                @error('jurusan')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="tlp">Telepon</label>
                   <input type="text" name="tlp" id="tlp" class="form-control @error('tlp') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->tlp }}">
                 </div>
-                @error('umur')
+                @error('tlp')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
                 <div class="form-group">
                   <label for="text">Alamat</label>
                   <input type="text" name="alamat" id="alamat" class="form-control @error('alamat') is-invalid @enderror" placeholder="Enter Umur" value="{{ $anggota[0]->alamat }}">
                 </div>
-                @error('umur')
+                @error('alamat')
                   <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
 
@@ -90,7 +90,7 @@
               <!-- /.card-body -->
 
               <div class="card-footer">
-                <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                <button type="cancel" class="btn btn-danger btn-md">Kembali</button>
                 <button type="submit" class="btn btn-warning">Update</button>
               </div>
             </form>

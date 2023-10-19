@@ -76,7 +76,7 @@
               <!-- /.card-body -->
 
               <div class="card-footer">
-                <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                <a class="btn btn-danger" href="{{ route('petugas.index')}}">Kembali</a>
                 <button type="submit" class="btn btn-warning">Submit</button>
               </div>
             </form>

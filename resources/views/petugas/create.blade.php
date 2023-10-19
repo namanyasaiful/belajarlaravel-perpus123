@@ -58,10 +58,9 @@
                                 </div>
 
                             </div>
-
-
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a class="btn btn-danger" href="{{ route('dashboard')}}">Kembali</a>
+                                <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                         </form>
                     </div>

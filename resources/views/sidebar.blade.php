@@ -1,9 +1,13 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="({{ route('dashboard') }})" class="brand-link">
-    <img src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">Perpustakaan</span>
-  </a>
+  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+        <img alt="Avatar"  class="img-circle elevation-2" src="template/dist/img/avatar4.png">
+        </div>
+        <div class="info">
+        <a href="{{ route('anggota.edit', Auth::user()->id) }}" class="d-block">{{ Auth::user()->name }}</a>
+        </div>
+      </div>
 
   <!-- Sidebar -->
   <div class="sidebar mt-2">
@@ -37,14 +41,6 @@
             <i class="nav-icon fas fa-th"></i>
             <p>
               Form Anggota
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="/buku/create" class="nav-link">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-              Form Buku
             </p>
           </a>
         </li>

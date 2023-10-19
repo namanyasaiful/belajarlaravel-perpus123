@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                                <a class="btn btn-danger" href="{{ route('dashboard')}}">Kembali</a>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                             <!-- /.content -->

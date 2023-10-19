@@ -26,7 +26,7 @@
         <!-- left column -->
         <div class="col-md-12">
           <!-- general form elements -->
-          <div class="card card-primary">
+          <div class="card card-info">
             <div class="card-header">
               <h3 class="card-title">Data Anggota</h3>
             </div>
@@ -63,7 +63,7 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="cancel" class="btn btn-danger btn-md">Cancel</button>
+                <a class="btn btn-danger" href="{{ route('anggota.index')}}">Kembali</a>
               </div>
 
               <!-- /.card-body -->

@@ -80,6 +80,9 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        <div class="card-footer">
+                            <a class="btn btn-danger" href="{{ route('dashboard')}}">Kembali</a>
+                        </div>
                     </div>
                 </div>
             </div>

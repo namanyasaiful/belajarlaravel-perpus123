@@ -23,43 +23,26 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
-
                 <!-- /.col-md-6 -->
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="m-0">Data Anggota</h5>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
-
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sequi?</p>
-                            <a href="/anggota" class="btn btn-primary">Tekan Disini</a>
-                        </div>
+                <div class="info-box mb-3">
+                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-users"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Data Anggota</span>
+                        <span class="info-box-number">2,000</span>
+                        <a class="btn btn-warning" href="/anggota">Tekan Disini</a>
                     </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="m-0">Data Buku</h5>
+                    <span class="info-box-icon bg-success elevation-1"><i class="fas fa-users"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Data Petugas</span>
+                            <span class="info-box-number">2,000</span>
+                            <a class="btn btn-warning" href="/petugas">Tekan Disini</a>
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                            <a href="/buku" class="btn btn-primary">Tekan Disini</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="m-0">Data Petugas</h5>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Lorem ipsum dolor sit amet.</h6>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, asperiores!</p>
-                            <a href="/petugas" class="btn btn-primary">Tekan Disini</a>
-                        </div>
-                    </div>
                 </div>
+
+                <form action="{{ route('auth.logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" class="nav-link btn btn-warning">Logout</button>
+                            </form>
                 <!-- /.col-md-6 -->
             </div>
             <!-- /.row -->
